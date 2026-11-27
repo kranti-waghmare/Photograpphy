@@ -1,0 +1,17 @@
+{
+  "name": "atelier-lumiere-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Atelier Lumiere - Luxury Photography Studio & Booking Platform",
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c yellow,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
